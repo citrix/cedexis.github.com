@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="en" http-equiv="content-language" />
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" name="viewport" />
+    <meta content="Cedexis public application development Github. Pull Cedexis code and modify to fit your needs." name="description" />
+    <meta content="cedexis, application, git, github, openmix, web, services, ios, android, silverlight, flash, sdk, developer, development, support, code" name="keywords" />
+    <script type="text/javascript">var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-33008248-1']);
+      _gaq.push(['_trackPageview']); 
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();   </script><title>Cedexis Developer Exchange
+      </title><link href="/stylesheets/site.css?1340926738" media="screen" rel="stylesheet" type="text/css" /><script src="/javascripts/libraries/jquery-1.7.1.min.js?1340728579" type="text/javascript"></script><!--[if lt IE 9]><script src="/javascripts/ie_site.js?1340728579" type="text/javascript"></script><link href="/stylesheets/ie.css?1340926737" media="screen" rel="stylesheet" type="text/css" /><![endif]--><!--[if lt IE 8]><link href="/stylesheets/ie7.css?1340926737" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+  </head>
+  <body>
+    <header>
+      <nav class="row">
+        <a class="logo" href="/" rel="cannonical" title="Cedexis Developer Exchange Home">Cedexis Developer exchange</a>
+        <ul id="language-nav">
+          <li><a href="/">English</a></li>
+          <li><a href="/fr/">Fran&ccedil;ais</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="copy"><h1>Git Dirty <em>with your Cedexis applications</em></h1>
+        </div>
+    </section>
+    <section class="content">
+      <h2 class="headline">What can we help you with?
+        </h2>
+      <div class="toggle" id="toggler">
+        <span class="current" data-slidedown="#app-library" data-slideup="#repo-tiles" id="om-library">Openmix App Library
+          </span><span data-slidedown="#repo-tiles" data-slideup="#app-library" id="git-repos">SDKs & Web Services
+          </span>
+      </div>
+      <div class="row" id="app-library">
+        <div class="info"><p>Learn how to use the library to make your own applications in the <a href="https://github.com/cedexis/openmixapplib/wiki">documentation</a>.</p>
+          </div>
+        <article class="app">
+          <div class="title">
+            <h3>Avoid Platforms based on Geography</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/avoid-by-geo/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> Geography, Performance</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/avoid-by-geo">apps/avoid-by-geo/ </a>
+              </p><p>You can choose to remove certain platforms from consideration based on geography. This example application shows you how to do that, wrapped in logic that chooses the available platform with the lowest response time.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>01&#47;31&#47;2012</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>Conditional Host Names</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/conditional-host-name/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> Geography, Performance</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/conditional-host-name">apps/conditional-host-name/ </a>
+              </p><p>Some platforms use virtual-host specific hostnames, often for content localization, but you often want to centralize these into your Openmix script rather than creating many Openmix platforms. For example, imagine your website has the URLs http://&lt;country&gt;.example.com/ where &lt;country&gt; is replaced with ISO codes.</p>
+              
+              <p>The solution is to dynamically construct the resulting hostname in the application as in this example application which routes traffic to the available platform with the lowest response time.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>01&#47;31&#47;2012</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>Route Based on Geography</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/geo-with-overides/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> Geography</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/geo-with-overides">apps/geo-with-overides/ </a>
+              </p><p>Demonstrates the basic use of geographic market and country data. Use Market data for most decsisions, but override certain countries.</p>
+              
+              <p>Contributed by Jake Maul of Mozilla</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>01&#47;31&#47;2012</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Jake Maul of Mozilla </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>Avoid Platforms that are Overloaded</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/limit-load/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> Fusion, Load</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/limit-load">apps/limit-load/ </a>
+              </p><p>This app demonstrates using Pulse Load to obtain current load data for each provider.  It uses this information to filter out providers that are currently overloaded.  Of the remaining providers, it selects the best-performing one.  If all providers are overloaded, it selects the best-performing overall.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>01&#47;31&#47;2012</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>Avoid Platforms that have reached a cost threshold</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/limit-money-spent/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> Fusion, Cost</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/limit-money-spent">apps/limit-money-spent/ </a>
+              </p><p>This application demonstrates using Pulse Load to obtain cloud provider &quot;cost&quot;, routing traffic away from a provider once it reaches a certain threshold.  Any servers below the cost threshold will be load-balanced with origin based on round-trip time performance.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>01&#47;31&#47;2012</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>New Relic Data Example</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/new-relic/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> Fusion</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/new-relic">apps/new-relic/ </a>
+              </p><p>This application demonstrates the use of New Relic data in an Openmix application.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>06&#47;14&#47;2012</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>Optimal Round Trip Time</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/perf-and-availability/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> Performance</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/perf-and-availability">apps/perf-and-availability/ </a>
+              </p><p>This application is ideal for getting started with Openmix application development. It uses both latency and availability to determine which platform to direct requests to, and you can quickly change from using latency to some other measure of performance.</p>
+              
+              <p>There is an Openmix Quick Start application type named &#39;Optimal Round Trip Time&#39; that provides the same functionality.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>06&#47;08&#47;2012</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>Performance with Geo Based Backup</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/perf-with-geo-backup/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> Radar, Geography</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/perf-with-geo-backup">apps/perf-with-geo-backup/ </a>
+              </p><p>This application demonstrates using Cedexis Radar as the primary way to select platforms, but where Geolocation data is used if there is inadequate radar data available.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>05&#47;11&#47;2012</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>Performance Routing with Platform Penalty</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/perf-with-penalty/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> Cost, Performance</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/perf-with-penalty">apps/perf-with-penalty/ </a>
+              </p><p>The routing provided by the basic performance application is great for certain cases, but there are times when you know that you only want to use a specific platform when others are considerably worse. For example, you might only want to send traffic to your origin when it is significantly better than any other choice.</p>
+              
+              <p>This application shows how this can work by using the concept of ‘padding’ to increase the value of the performance measure being used to decide where to send traffic.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>01&#47;31&#47;2012</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>Template</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/template/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> </span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/template">apps/template/ </a>
+              </p><p>The most basic template for an Openmix application.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>05&#47;21&#47;2012</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>Throughput with RTT Tie Breaker</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/thruput-with-rtt/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> Performance</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/thruput-with-rtt">apps/thruput-with-rtt/ </a>
+              </p><p>Choose the best provider based on HTTP Throughput. If the top 2 are with 5% of each other, use HTTP Response time to break the tie.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>03&#47;26&#47;2012</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="row" id="repo-tiles">
+        <div class="repo">
+          <img alt="openmix" src="/images/om-icon.png" /><h3>Openmix</h3>
+          <p>This library of <a href="http://www.cedexis.com/products/openmix.html">Openmix</a> applications provides examples to help you get started quickly and to give you ideas and best practices for your own applications. Explore the example applications, make them your own, and let us know if you have an application you would like added to the library. Pull requests gladly accepted. </p>
+          <div class="actions">
+            <a class="btn-inline btn-primary" href="https://github.com/cedexis/openmixapplib">Code
+              </a><a class="btn-inline" href="https://github.com/cedexis/openmixapplib/wiki">Documentation
+              </a>
+          </div>
+        </div>
+        <div class="repo">
+          <img alt="web services" src="/images/webservices-icon.png" /><h3>Web Services</h3>
+          <p>Use these web services to access <a href="http://www.cedexis.com/products/radar.html">Radar</a> data or read and update your Cedexis configurations programmatically. Documentation and examples are available and pull requests are gladly accepted.    </p>
+          <div class="actions">
+            <a class="btn-inline btn-primary" href="https://github.com/cedexis/webservices">Code
+              </a><a class="btn-inline" href="https://github.com/cedexis/webservices/wiki">Documentation
+              </a>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="team"><h2>The Cedexis development dream team</h2>
+        
+        <h4>The folks are gittin&#39; dirty every day</h4>
+        <div class="player">
+          <img alt="Hasan Alayli" src="/images/hasan.jpg" /><h4>Hasan Alayli</h4>
+          
+          <p><em>Sr. Software Engineer</em></p>
+          
+          <p>Its funny, isnt it? How your best friend can just blow up like that.</p>
+          </div>
+        <div class="player">
+          <img alt="Jon Chase" src="/images/jon.jpg" /><h4>Jon Chase</h4>
+          
+          <p><em>Sr. Software Engineer</em></p>
+          
+          <p>Everything you read on the internet is true.</p>
+          </div>
+        <div class="player">
+          <img alt="Neil Chazin" src="/images/neil.jpg" /><h4>Neil Chazin</h4>
+          
+          <p><em>Sr. Software Engineer</em></p>
+          
+          <p>Strange woment lying in ponds distributing swords is no basis for a system of government.</p>
+          </div>
+        <div class="player">
+          <img alt="Megan Chinburg" src="/images/megan.jpg" /><h4>Megan Chinburg</h4>
+          
+          <p><em>VP of Engineering</em></p>
+          
+          <p>A boom box is not a toy</p>
+          </div>
+        <div class="player">
+          <img alt="Gregory Grillo" src="/images/grillo.jpg" /><h4>Gregory Grillo</h4>
+          
+          <p><em>Sr. Software Engineer</em></p>
+          
+          <p>In order to understand recursion, one must first understand recursion.</p>
+          </div>
+        <div class="player">
+          <img alt="Marty Kagan" src="/images/marty.jpg" /><h4>Marty Kagan</h4>
+          
+          <p><em>Co-Founder and CEO</em></p>
+          
+          <p>Nudge, nudge, wink, wink. Know what I mean?</p>
+          
+          <p><a href="http://www.twitter.com/martykagan">@martykagan</a></p>
+          </div>
+        <div class="player">
+          <img alt="Scot Kennedy" src="/images/yoda.jpg" /><h4>Scot Kennedy</h4>
+          
+          <p><em>Data Analysis Engineer</em></p>
+          
+          <p>As a kid I use to lay and think, when is Santan gonna make a drink?</p>
+          </div>
+        <div class="player">
+          <img alt="Connor McLeod" src="/images/connor.jpg" /><h4>Connor McLeod</h4>
+          
+          <p><em>Software Engineer</em></p>
+          
+          <p>I&#39;m on a boat, everybody look at me &#39;cause I&#39;m on a boat!</p>
+          </div>
+        <div class="player">
+          <img alt="Jacob Wan" src="/images/jacob.jpg" /><h4>Jacob Wan</h4>
+          
+          <p><em>Software Engineer</em></p>
+          
+          <p>import itertools</p>
+          
+          <p>&#39;,&#39;.join(itertools.repeat(&#39;blah&#39;,3))</p>
+          </div>
+        <div class="player">
+          <img alt="Alex Wenckus" src="/images/alex.jpg" /><h4>Alex Wenckus</h4>
+          
+          <p><em>Sr. Software Engineer</em></p>
+          
+          <p>Run faster, jump higher, man I&#39;m not gonna let you poison me. I threw it on the ground.</p>
+          </div>
+        <div class="player">
+          <img alt="You" src="/images/you.jpg" /><h4>You</h4>
+          
+          <p><em>We&#39;re always looking</em></p>
+          
+          <p>Want your own spot on the roster? We&#39;re always looking for new players!</p>
+          
+          <p><a href="http://www.twitter.com/cedexis">@cedexis</a></p>
+          </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <div id="tweet"></div>
+      </div>
+      <div class="row">
+        <nav>
+          <div class="bucket"><h3>Openmix</h3>
+            <ul>
+              <li>
+                <a href="https://github.com/cedexis/openmixapplib">Code
+                  </a>
+              </li>
+              <li>
+                <a href="https://github.com/cedexis/openmixapplib/wiki">Documentation
+                  </a>
+              </li>
+            </ul>
+          </div>
+          <div class="bucket"><h3>Web Services</h3>
+            <ul>
+              <li>
+                <a href="https://github.com/cedexis/webservices">Code
+                  </a>
+              </li>
+              <li>
+                <a href="https://github.com/cedexis/webservices/wiki">Documentation
+                  </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="row" id="cdx">
+        <nav>
+          <ul>
+            <li>
+              <a class="cdx-logo" href="http://www.cedexis.com" title="To Cedexis.com">Cedexis</a>
+            </li>
+            <li><p><a href="http://www.cedexis.com/legal/terms.html" title="Cedexis Terms of Use">Terms of Use</a></p>
+              </li>
+            <li><p><a href="https://portal.cedexis.com" title="To Cedexis Portal">Cedexis Portal</a></p>
+              </li>
+            <li><p><a href="http://community.cedexis.com" title="To Cedexis Support Community">Cedexis Community</a></p>
+              </li>
+            <li class="right"><p>&copy; 2012 - Cedexis</p> 
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer><!-- IF NOT INTERNET EXPLORER THEN --><![if !(lt IE 9)]><script src="/javascripts/site.js?1340923411" type="text/javascript"></script><![endif]><script src="/javascripts/twitter.js?1340728579" type="text/javascript"></script></body>
+</html>

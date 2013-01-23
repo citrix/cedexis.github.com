@@ -21,7 +21,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();</script><title>Cedexis Developer Exchange
-      </title><link href="/stylesheets/site.css?1353967715" media="screen" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><script src="/javascripts/ie_site.js?1341956121" type="text/javascript"></script><link href="/stylesheets/ie.css?1353967715" media="screen" rel="stylesheet" type="text/css" /><![endif]--><!--[if lt IE 8]><link href="/stylesheets/ie7.css?1353967715" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+      </title><link href="/stylesheets/site.css?1358979151" media="screen" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><script src="/javascripts/ie_site.js?1358889113" type="text/javascript"></script><link href="/stylesheets/ie.css?1358978422" media="screen" rel="stylesheet" type="text/css" /><![endif]--><!--[if lt IE 8]><link href="/stylesheets/ie7.css?1358978422" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
   </head>
   <body>
     <header>
@@ -46,8 +46,35 @@
           </span>
       </div>
       <div class="row" id="app-library">
-        <div class="info"><p>Learn <a href="https://github.com/cedexis/openmixapplib/wiki">how to use the library to make your own applications</a> and <a href="https://github.com/cedexis/openmixapplib/wiki/Openmix-API">check out the complete API</a>.</p>
+        <div class="info"><p>Learn how to use the library to <a href="https://github.com/cedexis/openmixapplib/wiki">make your own applications</a> and <a href="https://github.com/cedexis/openmixapplib/wiki/Openmix-API">check out the complete API</a>.</p>
           </div>
+        <article class="app">
+          <div class="title">
+            <h3>AppDynamics Integration</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/apm-appdynamics/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> APM, Performance</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/apm-appdynamics">apps/apm-appdynamics/ </a>
+              </p><p>AppDynamics is an APM vendor focused on enterprise Java and .NET web applications. This app demonstrates using real time data from AppDynamics for decision making. Using FusionCustom, we will dynamically collect server health stats using a collector and basic HTTP authentication. This is a very simple example using current CPU threshold to switch between hosts. Refer to <a href="https://github.com/cedexis/openmixapplib/wiki/AppDynamics-Integration">the wiki</a> for details on URLs etc.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>01&#47;22&#47;2013</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
         <article class="app">
           <div class="title">
             <h3>Avoid Platforms based on Geography</h3>
@@ -501,65 +528,6 @@
         </article>
         <article class="app">
           <div class="title">
-            <h3>Peformance with Penalty and Availability, Sticky Winner</h3>
-            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/sticky-perf-with-penalty-and-availability/app/OpenmixApplication.php" title="Git the code">Git the code</a>
-          </div>
-          <div class="copy-table">
-            <div class="app-copy">
-              <p class="category">
-                <strong>Categories:</strong><span> </span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/sticky-perf-with-penalty-and-availability">apps/sticky-perf-with-penalty-and-availability/ </a>
-              </p><p>Routes requests to the highest performing available platform, applying an optional
-              handicap to each.  Once a choice is made, stick with that choice until an alternative
-              is significantly better or the original choice no longer exceeds the availability
-              threshold.</p>
-              
-              <p>Stickiness may optionally be limited to specific countries.</p>
-              </div>
-            <div class="meta">
-              <ul>
-                <li>
-                  <strong>Last updated:</strong>
-                </li>
-                <li>10&#47;8&#47;2012</li>
-              </ul>
-              <ul>
-                <li>
-                  <strong>Created by:</strong>
-                </li>
-                <li>Cedexis </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="app">
-          <div class="title">
-            <h3>Sticky, using preferred providers</h3>
-            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/sticky-with-preferred/app/OpenmixApplication.php" title="Git the code">Git the code</a>
-          </div>
-          <div class="copy-table">
-            <div class="app-copy">
-              <p class="category">
-                <strong>Categories:</strong><span> </span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/sticky-with-preferred">apps/sticky-with-preferred/ </a>
-              </p><p>A sticky choice application allowing you to select preferred providers for certain networks.</p>
-              </div>
-            <div class="meta">
-              <ul>
-                <li>
-                  <strong>Last updated:</strong>
-                </li>
-                <li>10&#47;11&#47;2012</li>
-              </ul>
-              <ul>
-                <li>
-                  <strong>Created by:</strong>
-                </li>
-                <li>Cedexis </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="app">
-          <div class="title">
             <h3>Template</h3>
             <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/template/app/OpenmixApplication.php" title="Git the code">Git the code</a>
           </div>
@@ -699,75 +667,103 @@
       <div class="row" id="team"><h2>The Cedexis development dream team</h2>
         
         <h4>The folks are gittin&#39; dirty every day</h4>
-        <div class="player">
-          <img alt="You" src="/images/you-bolder.jpg" /><h4>You</h4>
-          
-          <p><em>We&#39;re always looking</em></p>
-          
-          <p>Want your own spot on the roster? We&#39;re always looking for new players!</p>
-          
-          <p><a href="http://www.twitter.com/cedexis">@cedexis</a></p>
-          </div>
-        <div class="player">
-          <img alt="Jon Chase" src="/images/jon.jpg" /><h4>Jon Chase</h4>
-          
-          <p><em>Sr. Software Engineer</em></p>
-          
-          <p>Everything you read on the internet is true.</p>
-          </div>
-        <div class="player">
-          <img alt="Neil Chazin" src="/images/neil.jpg" /><h4>Neil Chazin</h4>
-          
-          <p><em>Sr. Software Engineer</em></p>
-          
-          <p>Strange women lying in ponds distributing swords is no basis for a system of government.</p>
-          </div>
-        <div class="player">
-          <img alt="Megan Chinburg" src="/images/megan.jpg" /><h4>Megan Chinburg</h4>
-          
-          <p><em>VP of Engineering</em></p>
-          
-          <p>A boom box is not a toy</p>
-          </div>
-        <div class="player">
-          <img alt="Gregory Grillo" src="/images/grillo.jpg" /><h4>Gregory Grillo</h4>
-          
-          <p><em>Sr. Software Engineer</em></p>
-          
-          <p>In order to understand recursion, one must first understand recursion.</p>
-          </div>
-        <div class="player">
-          <img alt="Marty Kagan" src="/images/marty.jpg" /><h4>Marty Kagan</h4>
-          
-          <p><em>Co-Founder and CEO</em></p>
-          
-          <p>Nudge, nudge, wink, wink. Know what I mean?</p>
-          
-          <p><a href="http://www.twitter.com/martykagan">@martykagan</a></p>
-          </div>
-        <div class="player">
-          <img alt="Scot Kennedy" src="/images/yoda.jpg" /><h4>Scot Kennedy</h4>
-          
-          <p><em>Data Analysis Engineer</em></p>
-          
-          <p>Scot feels strongly about AD&amp;D.</p>
-          </div>
-        <div class="player">
-          <img alt="Connor McLeod" src="/images/connor.jpg" /><h4>Connor McLeod</h4>
-          
-          <p><em>Software Engineer</em></p>
-          
-          <p>I&#39;m on a boat, everybody look at me &#39;cause I&#39;m on a boat!</p>
-          </div>
-        <div class="player">
-          <img alt="Jacob Wan" src="/images/jacob.jpg" /><h4>Jacob Wan</h4>
-          
-          <p><em>Software Engineer</em></p>
-          
-          <p>import itertools</p>
-          
-          <p>&#39;,&#39;.join(itertools.repeat(&#39;blah&#39;,3))</p>
-          </div>
+        <div class="team">
+          <div class="player">
+            <img alt="You" src="/images/you-bolder.jpg" /><h4>You</h4>
+            
+            <p><em>We&#39;re always looking</em></p>
+            
+            <p>Want your own spot on the roster? We&#39;re always looking for new players!</p>
+            
+            <p><a href="http://www.twitter.com/cedexis">@cedexis</a></p>
+            </div>
+          <div class="player">
+            <img alt="Hasan Alayli" src="/images/hasan.jpg" /><h4>Hasan Alayli</h4>
+            
+            <p><em>Sr. Software Engineer</em></p>
+            
+            <p>It&#39;s funny, isn&#39;t it? How your best friend can just blow up like that.</p>
+            </div>
+          <div class="player">
+            <img alt="Josh Cody" src="/images/josh.jpg" /><h4>Josh Cody</h4>
+            
+            <p><em>Senior Operations Engineer</em></p>
+            
+            <p>I&#39;m sick of following my dreams. I&#39;m just going to ask them where they&#39;re going, and hook up with them later.</p>
+            </div>
+          <div class="player">
+            <img alt="Jon Chase" src="/images/jon.jpg" /><h4>Jon Chase</h4>
+            
+            <p><em>Sr. Software Engineer</em></p>
+            
+            <p>Everything you read on the internet is true.</p>
+            </div>
+          <div class="player">
+            <img alt="Neil Chazin" src="/images/neil.jpg" /><h4>Neil Chazin</h4>
+            
+            <p><em>Sr. Software Engineer</em></p>
+            
+            <p>Strange women lying in ponds distributing swords is no basis for a system of government.</p>
+            </div>
+          <div class="player">
+            <img alt="Megan Chinburg" src="/images/megan.jpg" /><h4>Megan Chinburg</h4>
+            
+            <p><em>VP of Engineering</em></p>
+            
+            <p>A boom box is not a toy</p>
+            </div>
+          <div class="player">
+            <img alt="Esteban Esperanza" src="/images/este.jpg" /><h4>Esteban Esperanza</h4>
+            
+            <p><em>Señor Operations Engineer</em></p>
+            
+            <p>Code responsibly my friends.</p>
+            </div>
+          <div class="player">
+            <img alt="Gregory Grillo" src="/images/grillo.jpg" /><h4>Gregory Grillo</h4>
+            
+            <p><em>Sr. Software Engineer</em></p>
+            
+            <p>In order to understand recursion, one must first understand recursion.</p>
+            </div>
+          <div class="player">
+            <img alt="Ben LeBlond" src="/images/ben.jpg" /><h4>Ben LeBlond</h4>
+            
+            <p><em>Sr. Software Engineer</em></p>
+            
+            <p>The process of delving into the black abyss is to me the keenest form of fascination.</p>
+            </div>
+          <div class="player">
+            <img alt="Marty Kagan" src="/images/marty.jpg" /><h4>Marty Kagan</h4>
+            
+            <p><em>Co-Founder and CEO</em></p>
+            
+            <p>What do you mean it&#39;s not done yet?</p>
+            
+            <p><a href="http://www.twitter.com/martykagan">@martykagan</a></p>
+            </div>
+          <div class="player">
+            <img alt="Scot Kennedy" src="/images/scot.jpg" /><h4>Scot Kennedy</h4>
+            
+            <p><em>Data Analysis Engineer</em></p>
+            
+            <p>Quick! Roll a saving throw or take 3d6 damage from a Dire Bizinter.</p>
+            </div>
+          <div class="player">
+            <img alt="Connor McLeod" src="/images/connor.jpg" /><h4>Connor McLeod</h4>
+            
+            <p><em>Software Engineer</em></p>
+            
+            <p>There can be only one.</p>
+            </div>
+          <div class="player">
+            <img alt="Jacob Wan" src="/images/jacob.jpg" /><h4>Jacob Wan</h4>
+            
+            <p><em>Software Engineer</em></p>
+            
+            <p>Don&#39;t thread on me.</p>
+            </div>
+        </div>
       </div>
     </section>
     <footer>
@@ -867,5 +863,5 @@
           </ul>
         </nav>
       </div>
-    </footer><!-- IF NOT INTERNET EXPLORER THEN --><![if !(lt IE 9)]><script src="/javascripts/site.js?1341956121" type="text/javascript"></script><![endif]><script src="/javascripts/twitter.js?1340728579" type="text/javascript"></script></body>
+    </footer><!-- IF NOT INTERNET EXPLORER THEN --><![if !(lt IE 9)]><script src="/javascripts/site.js?1358889113" type="text/javascript"></script><![endif]><script src="/javascripts/twitter.js?1358889113" type="text/javascript"></script></body>
 </html>

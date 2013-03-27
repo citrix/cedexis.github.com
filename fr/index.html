@@ -21,7 +21,7 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();</script><title>Cedexis Developer Exchange
-      </title><link href="/stylesheets/site.css?1358983027" media="screen" rel="stylesheet" type="text/css" /><link href="/stylesheets/french.css?1358983026" media="screen" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><script src="/javascripts/ie_site.js?1358889113" type="text/javascript"></script><link href="/stylesheets/ie.css?1358978422" media="screen" rel="stylesheet" type="text/css" /><![endif]--><!--[if lt IE 8]><link href="/stylesheets/ie7.css?1358978422" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+      </title><link href="/stylesheets/site.css?1360870942" media="screen" rel="stylesheet" type="text/css" /><link href="/stylesheets/french.css?1360870942" media="screen" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><script src="/javascripts/ie_site.js?1341956121" type="text/javascript"></script><link href="/stylesheets/ie.css?1353967715" media="screen" rel="stylesheet" type="text/css" /><![endif]--><!--[if lt IE 8]><link href="/stylesheets/ie7.css?1353967715" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
   </head>
   <body>
     <header>
@@ -65,6 +65,33 @@
                   <strong>Last updated:</strong>
                 </li>
                 <li>01&#47;22&#47;2013</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>Avoid CDN Bursting Charges by tracking MBPS via Fusion Data API</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/fusion-cdn-avoid-bursting/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> Performance</span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/fusion-cdn-avoid-bursting">apps/fusion-cdn-avoid-bursting/ </a>
+              </p><p>This version of the Optimal Round Trip Time application allows you track your monthly 95/5 MBPS usage via that CDN&#39;s API. If your usage exceeds your commit, penalize that CDN enough to avoid a bursting charge. Otherwise use the Optimal Round Trip time approach.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>03&#47;25&#47;2013</li>
               </ul>
               <ul>
                 <li>
@@ -188,33 +215,6 @@
         <article class="app">
           <div class="title">
             <h3>Fusion Custom - Manage Cloud Instances externally</h3>
-            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/maintain-external-and-fusion-capacity/app/OpenmixApplication.php" title="Git the code">Git the code</a>
-          </div>
-          <div class="copy-table">
-            <div class="app-copy">
-              <p class="category">
-                <strong>Categories:</strong><span> </span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/maintain-external-and-fusion-capacity">apps/maintain-external-and-fusion-capacity/ </a>
-              </p><p>Demonstrates how to mix Radar performance data with a dynamically maintained list of Cloud Instances. Each cloud instance is associated with a Cloud Provider Region (like AWS US-East) for which we have Radar Performance data. Each instance also has a destination hostname or IP address and a &quot;status&quot;. Openmix will first determine the least latent Cloud Region and then Round Robin within the specific Cloud Instances marked as &quot;UP&quot; in the destinations.txt file.</p>
-              </div>
-            <div class="meta">
-              <ul>
-                <li>
-                  <strong>Last updated:</strong>
-                </li>
-                <li>02&#47;04&#47;2013</li>
-              </ul>
-              <ul>
-                <li>
-                  <strong>Created by:</strong>
-                </li>
-                <li>Cedexis </li>
-              </ul>
-            </div>
-          </div>
-        </article>
-        <article class="app">
-          <div class="title">
-            <h3>Fusion Custom - Manage Cloud Instances externally</h3>
             <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/maintain-external-destinations/app/OpenmixApplication.php" title="Git the code">Git the code</a>
           </div>
           <div class="copy-table">
@@ -228,7 +228,34 @@
                 <li>
                   <strong>Last updated:</strong>
                 </li>
-                <li>02&#47;04&#47;2013</li>
+                <li>03&#47;23&#47;2013</li>
+              </ul>
+              <ul>
+                <li>
+                  <strong>Created by:</strong>
+                </li>
+                <li>Cedexis </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="app">
+          <div class="title">
+            <h3>Fusion Custom - cloud bursting with weighted round robin based on an instance health check</h3>
+            <a class="btn btn-primary" href="https://github.com/cedexis/openmixapplib/tree/master/apps/maintain-external-and-fusion-capacity/app/OpenmixApplication.php" title="Git the code">Git the code</a>
+          </div>
+          <div class="copy-table">
+            <div class="app-copy">
+              <p class="category">
+                <strong>Categories:</strong><span> </span><strong>Application directory: </strong><a href="https://github.com/cedexis/openmixapplib/tree/master/apps/maintain-external-and-fusion-capacity">apps/maintain-external-and-fusion-capacity/ </a>
+              </p><p>Demonstrates how to mix Radar performance data with a dynamically maintained list of Cloud Instances. Each cloud instance is associated with a Cloud Provider Region (like AWS US-East) for which we have Radar Performance data. Each instance also has a destination hostname or IP address and a &quot;health&quot; value (1-10). Openmix will first determine the health of all the instances in each region. Regions where instances are struggling will have a handicap applied to their Radar score. This will shed traffic away from struggling regions. Users are sent to least latent Cloud Region and then an instance within using a weighted round robin approach taking into account the instance health score.</p>
+              </div>
+            <div class="meta">
+              <ul>
+                <li>
+                  <strong>Last updated:</strong>
+                </li>
+                <li>03&#47;23&#47;2013</li>
               </ul>
               <ul>
                 <li>
@@ -962,5 +989,5 @@
           </ul>
         </nav>
       </div>
-    </footer><!-- IF NOT INTERNET EXPLORER THEN --><![if !(lt IE 9)]><script src="/javascripts/site.js?1358889113" type="text/javascript"></script><![endif]><script src="/javascripts/twitter.js?1358889113" type="text/javascript"></script></body>
+    </footer><!-- IF NOT INTERNET EXPLORER THEN --><![if !(lt IE 9)]><script src="/javascripts/site.js?1341956121" type="text/javascript"></script><![endif]><script src="/javascripts/twitter.js?1340728579" type="text/javascript"></script></body>
 </html>

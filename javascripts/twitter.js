@@ -1,1 +1,46 @@
-$("#tweet").each(function(){function t(t){var n=new Date-t,r="",i=1e3;for(var s in e){i*=e[s];if(s=="years")break;if(r!=""&&n<i){i/=e[s];break}r=s}return Math.round(n/i)+" "+r+" ago"}function n(e){var t=/(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?/g;return e.replace(t,function(e){return"<a href='"+e+"'>"+e+"</a>"})}var e={seconds:1,minutes:60,hours:60,days:24,months:365/12,years:12},r=$(this);$.getJSON("http://twitter.com/statuses/user_timeline/cedexis.json?callback=?",function(e){if(e.length<=0)return;e=e[0];var i=t(new Date(e.created_at)),s=$("<p/>").text(e.text);s.html(n(s.text())),$("<span/>").html(i+" via <a href='http://twitter.com/cedexis'>Twitter</a>"+".").appendTo(s),r.html(s),r.slideDown()})});
+$("#tweet").each(function() {
+    var time = {"seconds": 1, "minutes": 60, "hours": 60, "days": 24,
+        "months": 365 / 12, "years": 12};
+
+    function timeDifference(previous) {
+        var elapsed = new Date() - previous;
+        var last = "";
+
+        var multiplier = 1000;
+        for (var unit in time) {
+            multiplier = multiplier * time[unit];
+            if (unit == "years") {
+                break;
+            }
+            else if (last != "" && elapsed < multiplier) {
+                multiplier = multiplier / time[unit];
+                break;
+            }
+            last = unit;
+        }
+        return Math.round(elapsed / multiplier) + ' ' + last + ' ago';
+    }
+
+    function linkify(text) {
+        var links = /(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&amp;:/~\+#]*[\w\-\@?^=%&amp;/~\+#])?/g;
+        return text.replace(links, function(match) {
+            return "<a href='" + match + "'>" + match + "</a>"
+        });
+    }
+
+    var tweeter = $(this);
+    $.getJSON("http://twitter.com/statuses/user_timeline/cedexis.json?callback=?",
+        function(data) {
+            if (data.length <= 0) {
+                return;
+            }
+            data = data[0];
+            var time = timeDifference(new Date(data["created_at"]));
+            var p = $("<p/>").text(data["text"]);
+            p.html(linkify(p.text()));
+            $("<span/>").html(time + " via <a href='http://twitter.com/cedexis'>Twitter</a>" + ".")
+                .appendTo(p);
+            tweeter.html(p);
+            tweeter.slideDown();
+        });
+});

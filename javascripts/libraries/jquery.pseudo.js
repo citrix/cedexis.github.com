@@ -1,1 +1,37 @@
-(function(e){function n(e){if(e&&e.length){var n=e.match(t.text)[1],r=n.match(t.url);return r?'<img src="'+r[1]+'" />':n}}function r(t,r,i){t!="after"&&(t="before"),(i=n(r.currentStyle[t]))&&e(r)[t=="before"?"prepend":"append"](e(document.createElement("span")).addClass(t).html(i))}var t={text:/^['"]?(.+?)["']?$/,url:/^url\(["']?(.+?)['"]?\)$/};e.pseudo=function(e){r("before",e),r("after",e),e.runtimeStyle.behavior=null};if(document.createStyleSheet){var i=document.createStyleSheet(null,0);i.addRule(".dummy","display: static;"),i.cssText="html, head, head *, body, *.before, *.after, *.before *, *.after * { behavior: none; } * { behavior: expression($.pseudo(this)); }"}})(jQuery);
+(function($){
+
+	var patterns = {
+		text: /^['"]?(.+?)["']?$/,
+		url: /^url\(["']?(.+?)['"]?\)$/
+	};
+
+	function clean(content) {
+		if(content && content.length) {
+			var text = content.match(patterns.text)[1],
+				url = text.match(patterns.url);
+			return url ? '<img src="' + url[1] + '" />': text;
+		}
+	}
+
+	function inject(prop, elem, content) {
+		if(prop != 'after') prop = 'before';
+		if(content = clean(elem.currentStyle[prop])) {
+			$(elem)[prop == 'before' ? 'prepend' : 'append'](
+				$(document.createElement('span')).addClass(prop).html(content)
+			);
+		}
+	}
+
+	$.pseudo = function(elem) {
+		inject('before', elem);
+		inject('after', elem);
+		elem.runtimeStyle.behavior = null;
+	};
+	
+	if(document.createStyleSheet) {
+		var o = document.createStyleSheet(null, 0);
+		o.addRule('.dummy','display: static;');
+		o.cssText = 'html, head, head *, body, *.before, *.after, *.before *, *.after * { behavior: none; } * { behavior: expression($.pseudo(this)); }';
+	}
+
+})(jQuery);
